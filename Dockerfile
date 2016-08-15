@@ -5,7 +5,7 @@ MAINTAINER Tristan Salles
 
 RUN apt-get update -y
 
-RUN apt-get install -y git python-pip python-dev libzmq3 libzmq3-dev pkg-config libfreetype6-dev libpng3 libopenmpi-dev openmpi-bin libhdf5-dev liblapack-dev llvm-3.6 libedit-dev gfortran
+RUN apt-get install -y git python-pip python-dev libzmq3 libzmq3-dev pkg-config libfreetype6-dev libpng3 libopenmpi-dev openmpi-bin libhdf5-dev liblapack-dev llvm-3.6 libedit-dev apt-get install gfortran mpich gcc-5
 
 RUN pip install -U setuptools
 RUN pip install -U pip  # fixes AssertionError in Ubuntu pip
