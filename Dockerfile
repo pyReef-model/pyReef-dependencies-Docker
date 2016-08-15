@@ -11,7 +11,7 @@ RUN pip install -U setuptools
 RUN pip install -U pip  # fixes AssertionError in Ubuntu pip
 RUN pip install enum34
 RUN LLVM_CONFIG=llvm-config-3.6 pip install llvmlite==0.8.0
-RUN pip install jupyter markupsafe zmq singledispatch backports_abc certifi jsonschema ipyparallel path.py matplotlib mpi4py==1.3.1 git+https://github.com/badlands-model/triangle pandas plotly
+RUN pip install jupyter markupsafe zmq singledispatch backports_abc certifi jsonschema ipyparallel path.py matplotlib mpi4py==1.3.1 pandas plotly
 RUN apt-get install -y libnetcdf-dev python-mpltoolkits.basemap
 RUN pip install Cython==0.20
 RUN pip install h5py
