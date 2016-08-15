@@ -5,9 +5,7 @@ MAINTAINER Tristan Salles
 
 RUN apt-get update -y
 
-RUN apt-get install -y git python-pip python-dev libzmq3 libzmq3-dev pkg-config libfreetype6-dev libpng3 libopenmpi-dev openmpi-bin libhdf5-dev liblapack-dev llvm-3.6 libedit-dev 
-RUN apt-get install -y gfortran g++ make mpich libmpich-dev 
-
+RUN apt-get install -y git python-pip python-dev libzmq3 libzmq3-dev pkg-config libfreetype6-dev libpng3 libopenmpi-dev openmpi-bin libhdf5-dev liblapack-dev llvm-3.6 libedit-dev gfortran
 RUN pip install -U setuptools
 RUN pip install -U pip  # fixes AssertionError in Ubuntu pip
 RUN pip install enum34
