@@ -16,6 +16,7 @@ RUN pip install Cython==0.20
 RUN pip install h5py
 RUN pip install scipy
 RUN pip install numpy
+RUN pip install shapely
 RUN pip install cmocean
 RUN pip install numba==0.23.1 ez_setup
 RUN pip install netcdf4
