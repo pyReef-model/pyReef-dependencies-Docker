@@ -22,4 +22,4 @@ RUN pip install numba==0.23.1 ez_setup
 RUN pip install netcdf4
 RUN pip install colorlover
 RUN pip install pyevtk
-RUN pip install scikit-fuzzy
+RUN pip install scikit-fuzzy 
